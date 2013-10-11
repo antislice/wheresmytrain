@@ -1,0 +1,7 @@
+twilio:
+	SID: 	ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx	# account SID
+	token:	yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy	# auth token
+
+phone:
+	from:	+1650xxxxxxx	# number twlio uses to send from
+	to:		+1415yyyyyyy	# your number

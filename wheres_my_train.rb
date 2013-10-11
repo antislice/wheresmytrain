@@ -3,6 +3,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'CSV'
 require 'twilio-ruby'
+require 'yaml'
 
 def todays_dep_time(dep_time)
 	today = Time.now
@@ -46,7 +47,6 @@ if trip_id.nil?
 end
 
 doc = Nokogiri::HTML(open("http://www.caltrain.com/schedules/realtime/stations/#{station}station-mobile.html"))
-# doc = Nokogiri::HTML(open("hillsdalemobile.html"))
 train_entry = doc.css('tr.ipf-st-ip-trains-subtable-tr').find do |train| 
 	train.css('td.ipf-st-ip-trains-subtable-td-id').first.content == train_num
 end
@@ -58,24 +58,17 @@ end
 
 wait_mins = train_entry.css('td.ipf-st-ip-trains-subtable-td-arrivaltime').first.content.split.first.to_i
 scheduled_arrival = get_stop_time(trip_id, station)
-test_time = Time.new(2013, 10, 11, 17, 6)
 expected_arrival = Time.now + min_to_sec(wait_mins)
-puts "there is a #{sec_to_min(scheduled_arrival - expected_arrival)} minute difference between scheduled and expected arrival times"
-puts "scheduled_time: #{scheduled_arrival}"
-puts "expected_time: #{expected_arrival}"
-puts "the train is on time: #{on_time?(scheduled_arrival, expected_arrival)}"
 
-#unless (on_time?(scheduled_arrival, expected_arrival))
-if false
-	account_sid = "xxxxxxxxxxx"
-	auth_token = "xxxxxxxxxxxxxx"
+unless (on_time?(scheduled_arrival, expected_arrival))
+	CONFIG = YAML.load_file('config.yml')
+	account_sid = CONFIG['twilio']['SID']
+	auth_token = CONFIG['twilio']['token']
 	client = Twilio::REST::Client.new account_sid, auth_token
  
-	from = "+xxxxxxxxxxx"
-
-  client.account.sms.messages.create(
-    :from => from,
-    :to => "+xxxxxxxxxx",
+	client.account.sms.messages.create(
+    :from => "+#{CONFIG['phone']['from']}",
+    :to => "+#{CONFIG['phone']['to']}",
     :body => "Caltrain #{train_num} is late! Expected arrival at #{station} is #{expected_arrival.strftime('%I:%M')}"
   ) 
   puts "Sent message about late train #{train_num}"
