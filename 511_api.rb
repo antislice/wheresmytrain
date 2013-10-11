@@ -1,6 +1,11 @@
 require 'nokogiri'
 require 'open-uri'
 
+# doc = Five11.get_routes_for_agency('Caltrain')
+# doc = Five11.get_stops_for_route('Caltrain', 'LIMITED', 'NB')
+# doc = Five11.get_next_departures_for_stop('70111') # Hillsdale stop NB
+# see http://511.org/docs/RTT%20API%20V2.0%20Reference.pdf for reference on API
+
 class Five11
 
 	def self.get_agencies
@@ -26,6 +31,7 @@ class Five11
 		"http://services.my511.org/Transit2.0/#{method}.aspx?token=#{TOKEN}"
 	end
 
-	TOKEN = "your-token-here"
+	# use your own token here
+	TOKEN = "87653c24-22de-4ea8-b3c2-3946b3cb2caa"
 
 end
