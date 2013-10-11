@@ -1,4 +1,4 @@
-﻿trip_id,trip_short_name,route_id,service_id,trip_headsign,direction_id,block_id,shape_id
+trip_id,trip_short_name,route_id,service_id,trip_headsign,direction_id,block_id,shape_id
 "101_20121001","101","ct_local_20121001","WD_20121001","San Francisco","0",,"cal_sj_sf"
 "102_20121001","102","ct_local_20121001","WD_20121001","San Jose","1",,"cal_sf_sj"
 "103_20121001","103","ct_local_20121001","WD_20121001","San Francisco","0",,"cal_tam_sf"

@@ -1,4 +1,4 @@
-﻿trip_id,arrival_time,departure_time,stop_id,stop_sequence,pickup_type,drop_off_type,shape_dist_traveled
+trip_id,arrival_time,departure_time,stop_id,stop_sequence,pickup_type,drop_off_type,shape_dist_traveled
 "101_20121001","04:30:00","04:30:00","San Jose Caltrain",1,,,
 "101_20121001","04:35:00","04:35:00","Santa Clara Caltrain",2,,,
 "101_20121001","04:40:00","04:40:00","Lawrence Caltrain",3,,,
