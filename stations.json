@@ -1,0 +1,155 @@
+[{
+ "name":"22nd st",
+ "url":"22ndstreet",
+ "stop_id":"22nd Street Caltrain"
+},
+{
+ "name":"atherton",
+ "url":"atherton",
+ "stop_id":"Atherton Caltrain"
+},
+{
+ "name":"bayshore",
+ "url":"bayshore",
+ "stop_id":"Bayshore Caltrain"
+},
+{
+ "name":"belmont",
+ "url":"belmont",
+ "stop_id":"Belmont Caltrain"
+},
+{
+ "name":"blossom hill",
+ "url":"blossomhill",
+ "stop_id":"Blossom Hill Caltrain"
+},
+{
+ "name":"broadway",
+ "url":"broadway",
+ "stop_id":"Broadway Caltrain"
+},
+{
+ "name":"burlingame",
+ "url":"burlingame",
+ "stop_id":"Burlingame Caltrain"
+},
+{
+ "name":"cal ave",
+ "url":"californiaave",
+ "stop_id":"California Ave Caltrain"
+},
+{
+ "name":"capitol",
+ "url":"capitol",
+ "stop_id":"Capitol Caltrain"
+},
+{
+ "name":"college park",
+ "url":"collegepark",
+ "stop_id":"College Park Caltrain"
+},
+{
+ "name":"gilroy",
+ "url":"gilroy",
+ "stop_id":"Gilroy Caltrain"
+},
+{
+ "name":"hayward park",
+ "url":"haywardpark",
+ "stop_id":"Hayward Park Caltrain"
+},
+{
+ "name":"hillsdale",
+ "url":"hillsdale",
+ "stop_id":"Hillsdale Caltrain"
+},
+{
+ "name":"lawrence",
+ "url":"lawrence",
+ "stop_id":"Lawrence Caltrain"
+},
+{
+ "name":"menlo park",
+ "url":"menlopark",
+ "stop_id":"Menlo Park Caltrain"
+},
+{
+ "name":"millbrae",
+ "url":"millbraetransitcenter",
+ "stop_id":"Millbrae Caltrain"
+},
+{
+ "name":"morgan hill",
+ "url":"morganhill",
+ "stop_id":"Morgan Hill Caltrain"
+},
+{
+ "name":"mountain view",
+ "url":"mountainview",
+ "stop_id":"Mountain View Caltrain"
+},
+{
+ "name":"palo alto",
+ "url":"paloalto",
+ "stop_id":"Palo Alto Caltrain"
+},
+{
+ "name":"redwood city",
+ "url":"redwoodcity",
+ "stop_id":"Redwood City Caltrain"
+},
+{
+ "name":"san antonio",
+ "url":"sanantonio",
+ "stop_id":"San Antonio Caltrain"
+},
+{
+ "name":"san bruno",
+ "url":"sanbruno",
+ "stop_id":"San Bruno Caltrain"
+},
+{
+ "name":"san carlos",
+ "url":"sancarlos",
+ "stop_id":"San Carlos Caltrain"
+},
+{
+ "name":"san francisco",
+ "url":"sanfrancisco",
+ "stop_id":"San Francisco Caltrain"
+},
+{
+ "name":"san jose",
+ "url":"sanjosediridon",
+ "stop_id":"San Jose Caltrain"
+},
+{
+ "name":"san martin",
+ "url":"sanmartin",
+ "stop_id":"San Martin Caltrain"
+},
+{
+ "name":"san mateo",
+ "url":"sanmateo",
+ "stop_id":"San Mateo Caltrain"
+},
+{
+ "name":"santa clara",
+ "url":"santaclara",
+ "stop_id":"Santa Clara Caltrain"
+},
+{
+ "name":"south sf",
+ "url":"southsanfrancisco",
+ "stop_id":"So. San Francisco Caltrain"
+},
+{
+ "name":"sunnyvale",
+ "url":"sunnyvale",
+ "stop_id":"Sunnyvale Caltrain"
+},
+{
+ "name":"tamien",
+ "url":"tamien",
+ "stop_id":"Tamien Caltrain"
+}]
