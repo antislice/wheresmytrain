@@ -14,8 +14,7 @@ class Station
 	end
 
 	def wait_time_for(train_num)
-		# doc = Nokogiri::HTML(open("http://www.caltrain.com/schedules/realtime/stations/#{@url}station-mobile.html"))
-		doc = Nokogiri::HTML(open("hillsdalemobile.html"))
+		doc = Nokogiri::HTML(open("http://www.caltrain.com/schedules/realtime/stations/#{@url}station-mobile.html"))
 		train_entry = doc.css('tr.ipf-st-ip-trains-subtable-tr').find do |train| 
 			train.css('td.ipf-st-ip-trains-subtable-td-id').first.content == train_num
 		end
