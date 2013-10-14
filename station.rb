@@ -7,7 +7,7 @@ class Station
 		@stop_id = station_hash['stop_id']
 	end
 
-	def get_stop_time(trip_id)
+	def stop_time_for_trip(trip_id)
 		csv = CSV.parse(File.read('google_transit_static_devs/stop_times.txt'), headers: true)
 		stop_time = csv.find {|stop| stop['trip_id'] == trip_id and stop['stop_id'] == @stop_id}
 		todays_dep_time(stop_time['departure_time'])

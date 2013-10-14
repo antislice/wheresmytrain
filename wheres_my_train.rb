@@ -33,7 +33,7 @@ end
 
 wait_mins = station.wait_time_for(train_num)
 exit if wait_mins.nil?
-scheduled_arrival = station.get_stop_time(trip_id)
+scheduled_arrival = station.stop_time_for_trip(trip_id)
 expected_arrival = Time.now + min_to_sec(wait_mins)
 
 unless (Caltrain.on_time?(scheduled_arrival, expected_arrival))
